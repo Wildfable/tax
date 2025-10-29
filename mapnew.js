@@ -135,7 +135,7 @@ window.addEventListener("DOMContentLoaded", () => {
     additionalQuery.returnGeometry = false;
     additionalQuery.outFields = "*"
     ////execute query on your new layer
-    xxxLayer.queryFeatures(additionalQuery).then(function (r) {
+    medianAgeLayer.queryFeatures(additionalQuery).then(function (r) {
       console.log(r)
       r.features.forEach(function (feature) {
         // prefer matching by postal abbreviation (STUSPS)

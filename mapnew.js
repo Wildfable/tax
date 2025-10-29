@@ -171,8 +171,8 @@ window.addEventListener("DOMContentLoaded", () => {
         console.log('All data loaded — submit enabled');
       }
     }).catch(function (err) {
-      console.error('loadAdditionalData failed:', err);
-      medianLoaded = true;
+      console.error('loadAgeData failed:', err);
+      ageLoaded = true;
       if (statesLoaded && medianLoaded && ageLoaded) {
         if (submitBtn) submitBtn.disabled = false;
       } else {

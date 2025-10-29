@@ -153,9 +153,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
           var age = null;
         if ('B01002_001E' in feature.attributes) {
-          income = feature.attributes['B01002_001E'];
+          age = feature.attributes['B01002_001E'];
         } else if ('MEDIAN_AGE' in feature.attributes) { // example fallback
-          income = feature.attributes['MEDIAN_AGE'];
+          age = feature.attributes['MEDIAN_AGE'];
         } else {
           // if the expected field isn't present, log available keys to pick the correct one
           console.warn('loadAdditionalData: median age field not found for', abbr, 'attributes keys:', Object.keys(feature.attributes));

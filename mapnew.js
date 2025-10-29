@@ -161,7 +161,7 @@ window.addEventListener("DOMContentLoaded", () => {
           console.warn('loadAdditionalData: median age field not found for', abbr, 'attributes keys:', Object.keys(feature.attributes));
         }
 
-        stateObj[matchKey]['medianAge'] = median;
+        stateObj[matchKey]['medianAge'] = age;
       });
 
       console.log('loadAdditionalData: median age loaded');

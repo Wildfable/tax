@@ -129,7 +129,7 @@ window.addEventListener("DOMContentLoaded", () => {
     title: "Median Age",
   });
 
-  var loadAdditionalData = function () {
+  var loadAgeData = function () {
     ////Create a new query object and give it the correct properties for what you want
     let additionalQuery = medianAgeLayer.createQuery();
     additionalQuery.returnGeometry = false;
@@ -181,7 +181,7 @@ window.addEventListener("DOMContentLoaded", () => {
     })
   }
 
-  loadAdditionalData()
+  loadAgeData()
   ///this is where you'll query an additional service to add more data to you mapping dashboard
   ///here are some examples
   //this example is from the URL below
